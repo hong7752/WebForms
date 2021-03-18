@@ -69,91 +69,96 @@
     </div>
 
     <div class="container">
-        <form action="check.php" method="POST">
-            <h2 class="pt-3 pb-3 text-center">課程諮詢</h2>
-            <div class="form-group row row justify-content-center">
-                <label for="" class="col-sm-2 col-form-label">姓名</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" placeholder="請輸入姓名" required>
+        <div class="card border-primary mb-3">
+            <form action="check.php" method="POST">
+                <h2 class="card-body text-primary pt-3 pb-3 text-center">課程諮詢</h2>
+                <div class="form-group row row justify-content-center">
+                    <label for="" class="col-sm-2 col-form-label">姓名</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" placeholder="請輸入姓名" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row row justify-content-center">
-                <label for="mobile" class="col-sm-2 col-form-label">電話</label>
-                <div class="col-sm-5">
-                    <input type="mobile" class="form-control" placeholder="請輸入電話" required>
+                <div class="form-group row row justify-content-center">
+                    <label for="mobile" class="col-sm-2 col-form-label">電話</label>
+                    <div class="col-sm-5">
+                        <input type="mobile" class="form-control" placeholder="請輸入電話" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row row justify-content-center">
-                <label for="e-mail" class="col-sm-2 col-form-label">信箱</label>
-                <div class="col-sm-5">
-                    <input type="email" name="e-mail" id="e-mail" class="form-control" placeholder="請輸入e-mail" required>
+                <div class="form-group row row justify-content-center">
+                    <label for="e-mail" class="col-sm-2 col-form-label">信箱</label>
+                    <div class="col-sm-5">
+                        <input type="email" name="e-mail" id="e-mail" class="form-control" placeholder="請輸入e-mail"
+                            required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row row justify-content-center">
-                <label for="" class="col-sm-2 col-form-label">最高學歷</label>
-                <div class="col-sm-5">
-                    <select class="form-control" name="degree" id="">
-                        <option value="4">碩士以上</option>
-                        <option value="3">大學</option>
-                        <option value="2">高中</option>
-                        <option value="1">國中以下</option>
-                    </select>
+                <div class="form-group row row justify-content-center">
+                    <label for="" class="col-sm-2 col-form-label">最高學歷</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" name="degree" id="">
+                            <option value="4">碩士以上</option>
+                            <option value="3">大學</option>
+                            <option value="2">高中</option>
+                            <option value="1">國中以下</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row row justify-content-center">
-                <label for='directions' class="col-sm-2 col-form-label">詢問方向</label>
-                <div class="pl-3 form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="directions" id="directions"
-                        value="checkedValue">
-                    <label class="form-check-label">程式設計</label>
+                <div class="form-group row row justify-content-center">
+                    <label for='directions' class="col-sm-2 col-form-label">詢問方向</label>
+                    <div class="pl-3 form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="directions" id="directions"
+                            value="checkedValue">
+                        <label class="form-check-label">程式設計</label>
+                    </div>
+                    <div class="pl-3 form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="directions" id="directions"
+                            value="checkedValue">
+                        <label class="form-check-label">網頁開發</label>
+                    </div>
+                    <div class="pl-3 form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="directions" id="directions"
+                            value="checkedValue">
+                        <label class="form-check-label">遊戲設計</label>
+                    </div>
+                    <div class="pl-3 form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="directions" id="directions"
+                            value="checkedValue">
+                        <label class="form-check-label">資料分析</label>
+                    </div>
                 </div>
-                <div class="pl-3 form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="directions" id="directions"
-                        value="checkedValue">
-                    <label class="form-check-label">網頁開發</label>
+                <div class="form-group row row justify-content-center">
+                    <label for="date" class="col-sm-2 col-form-label">預約時間</label>
+                    <div class="col-sm-5">
+                        <input type="date" name="" id="" class="form-control" placeholder="年/月/日">
+                    </div>
                 </div>
-                <div class="pl-3 form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="directions" id="directions"
-                        value="checkedValue">
-                    <label class="form-check-label">遊戲設計</label>
+                <div class="form-group row row justify-content-center">
+                    <label for="msg" class="col-sm-2 col-form-label">留言區</label>
+                    <div class="col-sm-5">
+                        <textarea class="form-control" name="msg" id="msg" rows="4"
+                            placeholder="對本班課程有任何想詢問的歡迎留言"></textarea>
+                    </div>
                 </div>
-                <div class="pl-3 form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="directions" id="directions"
-                        value="checkedValue">
-                    <label class="form-check-label">資料分析</label>
+                <div class="row justify-content-md-center">
+                    <label for='directions' class="col-sm-5 col-form-label">提交表單</label>
+                    <div class="pl-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="directions" id="directions"
+                            value="checkedValue">
+                        <label class="form-check-label">同意</label>
+                    </div>
+                    <div class="pl-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="directions" id="directions"
+                            value="checkedValue">
+                        <label class="form-check-label">不同意</label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row row justify-content-center">
-                <label for="date" class="col-sm-2 col-form-label">預約時間</label>
-                <div class="col-sm-5">
-                    <input type="date" name="" id="" class="form-control" placeholder="年/月/日">
+                <div class="row justify-content-md-center pb-3">
+                    <label for="" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-5 text-right">
+                        <button type="submit" class="btn btn-primary mt-3">送出</button>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row row justify-content-center">
-                <label for="msg" class="col-sm-2 col-form-label">留言區</label>
-                <div class="col-sm-5">
-                    <textarea class="form-control" name="msg" id="msg" rows="4"
-                        placeholder="對本班課程有任何想詢問的歡迎留言"></textarea>
-                </div>
-            </div>
-            <div class="row justify-content-md-center">
-                <label for='directions' class="col-sm-5 col-form-label">提交表單</label>
-                <div class="pl-3 form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="directions" id="directions" value="checkedValue">
-                    <label class="form-check-label">同意</label>
-                </div>
-                <div class="pl-3 form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="directions" id="directions" value="checkedValue">
-                    <label class="form-check-label">不同意</label>
-                </div>
-            </div>
-            <div class="row justify-content-md-center">
-                <label for="" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-5 text-right">
-                    <button type="submit" class="btn btn-primary mt-3">送出</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
     <!-- 表格 -->
